@@ -155,7 +155,7 @@ export const CyberRiskQuantHero: React.FC<HeroProps> = ({ onOpenPlatform, onNavi
           <motion.h1
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.6, delay: 0.1, ease: 'easeOut' }}
             style={{
               fontFamily: 'var(--font-heading)',
               fontSize: 'clamp(1.85rem, 5vw, 3.25rem)',
@@ -173,7 +173,7 @@ export const CyberRiskQuantHero: React.FC<HeroProps> = ({ onOpenPlatform, onNavi
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.6, delay: 0.25, ease: 'easeOut' }}
             style={{
               fontFamily: 'var(--font-body)',
               fontSize: 'clamp(0.95rem, 2vw, 1.15rem)',
@@ -190,7 +190,7 @@ export const CyberRiskQuantHero: React.FC<HeroProps> = ({ onOpenPlatform, onNavi
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.38, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.6, delay: 0.38, ease: 'easeOut' }}
             className="flex flex-wrap items-center gap-4"
           >
             {/* Primary CTA */}
@@ -250,7 +250,7 @@ export const CyberRiskQuantHero: React.FC<HeroProps> = ({ onOpenPlatform, onNavi
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
-              transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.45, ease: 'easeOut' }}
               style={{
                 width: 'min(88vw, 360px)',
                 height: '100dvh',

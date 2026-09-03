@@ -17,7 +17,7 @@ const sectionVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.65, ease: [0.16, 1, 0.3, 1] },
+    transition: { duration: 0.65, ease: 'easeOut' as const },
   },
 };
 
@@ -28,7 +28,7 @@ const staggerContainer = {
 
 const cardVariant = {
   hidden: { opacity: 0, y: 28 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.55, ease: [0.16, 1, 0.3, 1] } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.55, ease: 'easeOut' as const } },
 };
 
 // Radial gauge for score
@@ -407,7 +407,7 @@ export const ExecutiveView: React.FC = () => {
                     initial={{ width: 0 }}
                     whileInView={{ width: `${pct}%` }}
                     viewport={{ once: true }}
-                    transition={{ duration: 1.1, delay: idx * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                    transition={{ duration: 1.1, delay: idx * 0.1, ease: 'circOut' }}
                     className="h-full rounded-full"
                     style={{ background: `linear-gradient(90deg, ${severityColor}, ${severityColor}aa)` }}
                   />
@@ -507,7 +507,7 @@ export const ExecutiveView: React.FC = () => {
             key={nlAnswer}
             initial={{ opacity: 0, y: 12, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.4, ease: 'easeOut' }}
             className="p-5 rounded-2xl bg-[#FAFBFD] border border-[#7342E2]/25 text-xs font-mono text-[#192837] leading-relaxed"
           >
             <span className="font-bold font-sans text-[#7342E2] block mb-1.5">CyberRisk Quant Answer</span>
